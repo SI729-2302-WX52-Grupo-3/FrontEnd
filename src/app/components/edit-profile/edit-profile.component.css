@@ -1,0 +1,119 @@
+.container{
+  margin: 10px auto;
+  max-width: 900px;
+}
+
+h2{
+  text-align: center;
+  color: #535353;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+h3{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  display: none;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.input-box{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.input-box label{
+  color: #6C6B6B;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.input-box input, textarea{
+  border: 1px solid #2980B9;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+}
+textarea{
+  resize: none;
+  height: 90px;
+}
+
+form{
+  width: 80%;
+  margin-top: 30px;
+  max-width: 500px;
+}
+
+form button{
+  background: #9494C2;
+  padding: 10px;
+  border:none;
+  border-radius: 5px;
+  width: 85%;
+  max-width: 200px;
+  margin: auto;
+  display: block;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+form button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (min-width: 750px) {
+
+  h3{
+    display: flow;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #484A4C;
+    font-weight: 600;
+  }
+
+  .image{
+    margin-right: 40px;
+  }
+  .content img{
+    width: 230px;
+    height: 230px;
+  }
+  .content{
+    flex-direction: row;
+  }
+
+  .information{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+  }
+
+  .email, .situation{
+    grid-column: span 2;
+  }
+
+  .input-box{
+    width: 100%;
+  }
+  form button{
+    margin: 20px auto;
+  }
+}
