@@ -15,6 +15,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+
+import { HomeComponent } from './views/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 
@@ -22,13 +26,20 @@ import {MatToolbarModule} from "@angular/material/toolbar";
   declarations: [
     AppComponent,
     EditProfileComponent,
+
     LogInCardComponent,
     LogInComponent,
     ToolbarComponent
+
+    HomeComponent,
+    ToolbarComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     FormsModule,
     MatCardModule,
     BrowserAnimationsModule,
