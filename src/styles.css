@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --primary: '#0093AB';
-  --secondary: '#FD5D5D';
+    --primary: '#0093AB';
+    --secondary: '#FD5D5D';
 }
 
 html, body { height: 100%; }
