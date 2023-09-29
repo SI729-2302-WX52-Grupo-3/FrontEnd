@@ -3,24 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
-import { AppRoutingModule } from './app-routing.module';
 import { LogInCardComponent } from './components/log-in-card/log-in-card.component';
 import { LogInComponent } from './views/patients/log-in/log-in.component';
 import { FormsModule } from '@angular/forms';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 import { HomeComponent } from './views/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import {MatToolbarModule} from "@angular/material/toolbar";
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -29,12 +28,10 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 
     LogInCardComponent,
     LogInComponent,
-    ToolbarComponent
+    ToolbarComponent,
 
     HomeComponent,
     ToolbarComponent,
-
-
   ],
   imports: [
     BrowserModule,
@@ -52,6 +49,6 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MatToolbarModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
