@@ -20,12 +20,15 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { DoctorProfileComponent } from './components/doctor-profile/doctor-profile.component';
+import { MedicalHistoryComponent } from './components/medical-history/medical-history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EditProfileComponent,
-
+    DoctorProfileComponent,
+    MedicalHistoryComponent,
     LogInCardComponent,
     LogInComponent,
     ToolbarComponent,
