@@ -94,6 +94,10 @@ export class LogInCardComponent implements OnInit{
     }
   }
 
+  forgot_password(){
+    this.router.navigate(['/change-password'])
+  }
+
   ngOnInit() {
     /*this.newsSource.getSources('patients').subscribe((data: any): void => {
       this.patients = data;
