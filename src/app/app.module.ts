@@ -37,6 +37,7 @@ import { MatTableModule } from '@angular/material/table';
 import { NewMedicalHistoryComponent } from './components/new-medical-history/new-medical-history.component';
 import { MedicalHistorFormComponent } from './components/medical-histor-form/medical-histor-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PharmacyComponent } from './pharmacy/pharmacy.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppointmentComponent,
     NewMedicalHistoryComponent,
     MedicalHistorFormComponent,
+    PharmacyComponent,
   ],
   imports: [
     BrowserModule,
