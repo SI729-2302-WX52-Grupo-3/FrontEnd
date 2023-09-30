@@ -22,8 +22,6 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DoctorProfileComponent } from './components/doctor-profile/doctor-profile.component';
 import { MedicalHistoryComponent } from './components/medical-history/medical-history.component';
-import { ChangePasswordComponent } from './components/change-password/change-password.component';
-import { SuccesfullChangePasswordComponent } from './components/succesfull-change-password/succesfull-change-password.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +35,6 @@ import { SuccesfullChangePasswordComponent } from './components/succesfull-chang
 
     HomeComponent,
     ToolbarComponent,
-    ChangePasswordComponent,
-    SuccesfullChangePasswordComponent,
   ],
   imports: [
     BrowserModule,
