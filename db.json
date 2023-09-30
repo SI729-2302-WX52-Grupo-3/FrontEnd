@@ -26,10 +26,9 @@
       "email": "juan@example.com",
       "gender": "Masculino",
       "password": "secretpassword",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
     {
-
       "id": 2,
       "dni": "979843256",
       "name": "Miguel Angel",
@@ -38,11 +37,9 @@
       "email": "miguel@example.com",
       "gender": "Masculino",
       "password": "562341",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
-
     {
-
       "id": 3,
       "dni": "952387459",
       "name": "Lucas Angel",
@@ -51,11 +48,9 @@
       "email": "lucas@example.com",
       "gender": "Masculino",
       "password": "745612",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
-
     {
-
       "id": 4,
       "dni": "958963217",
       "name": "Gabriel Alfredo",
@@ -64,10 +59,9 @@
       "email": "gabriel@example.com",
       "gender": "Masculino",
       "password": "874563",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
     {
-
       "id": 5,
       "dni": "945896327",
       "name": "Will Futuri",
@@ -76,10 +70,9 @@
       "email": "will@example.com",
       "gender": "Masculino",
       "password": "987456",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
     {
-
       "id": 6,
       "dni": "968357214",
       "name": "Paco Rabann",
@@ -88,11 +81,9 @@
       "email": "paco@example.com",
       "gender": "Masculino",
       "password": "789123",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
-
     {
-
       "id": 7,
       "dni": "956328741",
       "name": "Sebastian Fuentes",
@@ -101,10 +92,9 @@
       "email": "sebastian@example.com",
       "gender": "Masculino",
       "password": "678965",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
     {
-
       "id": 8,
       "dni": "958963258",
       "name": "David Heraldo",
@@ -113,10 +103,9 @@
       "email": "david@example.com",
       "gender": "Masculino",
       "password": "564789",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
     {
-
       "id": 9,
       "dni": "985465985",
       "name": "Pedro Estrella",
@@ -125,10 +114,9 @@
       "email": "pedro@example.com",
       "gender": "Masculino",
       "password": "456789",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
     {
-
       "id": 10,
       "dni": "945825756",
       "name": "Marcos Fuentess",
@@ -137,10 +125,9 @@
       "email": "marcos@example.com",
       "gender": "Masculino",
       "password": "345678",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
     {
-
       "id": 11,
       "dni": "958685723",
       "name": "Mario Rodriguez",
@@ -149,10 +136,9 @@
       "email": "mario@example.com",
       "gender": "Masculino",
       "password": "234567",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     },
     {
-
       "id": 12,
       "dni": "945862179",
       "name": "Alexander Danny",
@@ -161,9 +147,105 @@
       "email": "alexander@example.com",
       "gender": "Masculino",
       "password": "456895",
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
     }
-
-
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Juan Rodrigo",
+      "lastname": "Perez Lucano",
+      "dni": "12536987",
+      "specialty": "Dermatologia",
+      "email": "juan@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Tomas Roldan",
+      "lastname": "Zapata Jimenes",
+      "dni": "45896321",
+      "specialty": "Alergologia",
+      "email": "Tomas@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Giakomo Sebastian",
+      "lastname": "Cardiologia",
+      "dni": "45218963",
+      "specialty": "Dermatologia",
+      "email": "sebas@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Fabrizio Tarmalio",
+      "lastname": "Aquino Ferreira",
+      "dni": "12489675",
+      "specialty": "Endocrinologia",
+      "email": "fabrizio@example.com"
+    },
+    {
+      "id": 5,
+      "name": "Sergio Fonseca",
+      "lastname": "Carbajar Caragua",
+      "dni": "98541276",
+      "specialty": "Infecciologia",
+      "email": "sergio@example.com"
+    },
+    {
+      "id": 6,
+      "name": "Rodrigo German",
+      "lastname": "Campodonico Flores",
+      "dni": "44588937",
+      "specialty": "Pediatria",
+      "email": "rodrigo@example.com"
+    },
+    {
+      "id": 7,
+      "name": "Renzo Christopher",
+      "lastname": "Galvez Savedra",
+      "dni": "99842567",
+      "specialty": "Psiquiatria",
+      "email": "renzo@example.com"
+    },
+    {
+      "id": 8,
+      "name": "Willy David",
+      "lastname": "Flores Ricaldi",
+      "dni": "77541286",
+      "specialty": "Cirugia abdominal",
+      "email": "David@example.com"
+    },
+    {
+      "id": 9,
+      "name": "Kimberly Andrea",
+      "lastname": "Salazar Rio",
+      "dni": "88547692",
+      "specialty": "Cirugia Pediatrica",
+      "email": "kim@example.com"
+    },
+    {
+      "id": 10,
+      "name": "Alison Cristina",
+      "lastname": "Caceres Campos",
+      "dni": "44678521",
+      "specialty": "Patologia",
+      "email": "ali@example.com"
+    },
+    {
+      "id": 11,
+      "name": "Blanca Mirella",
+      "lastname": "Galicio Valverde",
+      "dni": "99634789",
+      "specialty": "Neurocirugia",
+      "email": "blanca@example.com"
+    },
+    {
+      "id": 1,
+      "name": "Elizabeth Rosa",
+      "lastname": "Moreno Cisneros",
+      "dni": "41247658",
+      "specialty": "Dermatologia",
+      "email": "eliza@example.com"
+    }
   ]
 }
