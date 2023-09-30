@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { LogInCardComponent } from './components/log-in-card/log-in-card.component';
 import { LogInComponent } from './views/patients/log-in/log-in.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -33,9 +33,10 @@ import { AppointmentComponent } from './components/appointment/appointment.compo
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import { MatTimepickerModule } from 'mat-timepicker';
-import {MatTableModule} from "@angular/material/table";
-import {HttpClientModule} from "@angular/common/http";
-import {DialogModule} from "@angular/cdk/dialog";
+import { MatTableModule } from '@angular/material/table';
+import { NewMedicalHistoryComponent } from './components/new-medical-history/new-medical-history.component';
+import { MedicalHistorFormComponent } from './components/medical-histor-form/medical-histor-form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import {DialogModule} from "@angular/cdk/dialog";
     NewReviewComponent,
     DoctorsComponent,
     AppointmentComponent,
-
+    NewMedicalHistoryComponent,
+    MedicalHistorFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,15 +81,12 @@ import {DialogModule} from "@angular/cdk/dialog";
     MatTimepickerModule,
     ReactiveFormsModule,
     MatTableModule,
+
     HttpClientModule,
-    DialogModule
-
-
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
 
 //Angie
