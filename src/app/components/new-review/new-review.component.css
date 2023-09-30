@@ -1,0 +1,20 @@
+.new-review-container {
+  padding: 20px;
+}
+
+.mat-icon.star-filled {
+  color: gold;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.stars-container {
+  display: flex;
+  align-items: center;
+}

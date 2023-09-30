@@ -1,0 +1,25 @@
+<mat-card class="new-review-container">
+  <h2>New Review</h2>
+
+  <h3>Doctor</h3>
+  <p>{{ doctorName }}</p>
+
+  <h3>Stars</h3>
+  <div class="stars-container">
+    <mat-icon
+      *ngFor="let star of stars"
+      (click)="toggleStar(star)"
+      [ngClass]="{'star-filled': star.filled}"
+    >star</mat-icon
+    >
+  </div>
+
+  <h3>Descripcion</h3>
+  <mat-form-field>
+    <textarea matInput rows="4" [(ngModel)]="reviewDescription"></textarea>
+  </mat-form-field>
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="publishReview()">Publish</button>
+  </div>
+</mat-card>
