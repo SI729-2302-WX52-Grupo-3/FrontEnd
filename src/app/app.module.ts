@@ -28,6 +28,7 @@ import { DashboardComponent } from './views/patients/dashboard/dashboard.compone
 import { ProfileComponent } from './views/patients/profile/profile.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { NewReviewComponent } from './components/new-review/new-review.component';
+import { DoctorsComponent } from './components/doctors/doctors.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { NewReviewComponent } from './components/new-review/new-review.component
     ProfileComponent,
     EditProfileComponent,
     ReviewsComponent,
-    NewReviewComponent
+    NewReviewComponent,
+    DoctorsComponent
   ],
   imports: [
     BrowserModule,
