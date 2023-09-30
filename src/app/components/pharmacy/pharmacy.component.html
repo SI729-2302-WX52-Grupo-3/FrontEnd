@@ -1,0 +1,58 @@
+<div class="table-wrapper">
+  <h1>Appointments Catalogue</h1>
+
+  <app-pharmacy-form
+    (editCanceled)="onCancelEdit()"
+    (pharmacyAdded)="onPharmacyAdded($event)"
+    (pharmacyUpdated)="onPharmacyUpdated($event)"
+    [editMode]="isEditMode"
+    [pharmacy]="PharmacyData"
+  />
+
+  <!-- Data Table -->
+  <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table matSort>
+    <ng-container matColumnDef="id">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>#Id</th>
+      <td *matCellDef="let element" mat-cell>{{ element.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="allergy">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Allergy</th>
+      <td *matCellDef="let element" mat-cell>{{ element.allergy }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="pathological">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Pathological</th>
+      <td *matCellDef="let element" mat-cell>{{ element.pathological }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="weight">
+      <th *matHeaderCellDef mat-header-cell>Weight</th>
+      <td *matCellDef="let element" mat-cell>{{ element.weight }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="bodyMass">
+      <th *matHeaderCellDef mat-header-cell>Body Mass</th>
+      <td *matCellDef="let element" mat-cell>{{ element.bodyMass }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th *matHeaderCellDef mat-header-cell>Actions</th>
+      <td *matCellDef="let element" mat-cell>
+        <a (click)="onEditItem(element)" href="javascript:void(0)">
+          <mat-icon>edit</mat-icon>
+        </a>
+        <a (click)="onDeleteItem(element)" href="javascript:void(0)">
+          <mat-icon>delete</mat-icon>
+        </a>
+      </td>
+    </ng-container>
+
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr
+      *matRowDef="let row; columns: displayedColumns"
+      [ngClass]="{ 'editable-row': PharmacyData.id === row.id }"
+      mat-row
+    ></tr>
+  </table>
+</div>
