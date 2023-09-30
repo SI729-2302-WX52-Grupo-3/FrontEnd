@@ -1,0 +1,55 @@
+.container {
+  text-align: center;
+
+  padding: 20px;
+}
+
+.text-button{
+  color: white;
+  margin-top: 20%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button-icon {
+  color:white;
+}
+
+.custom-button {
+  margin: 10px;
+  background-color: #0093AB;
+
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+
+}
+
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer{
+  width: 260px;
+  background: #E0E0E0;
+}
+
+mat-drawer-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer{
+  width: 260px;
+  background: #E0E0E0;
+}
+
+

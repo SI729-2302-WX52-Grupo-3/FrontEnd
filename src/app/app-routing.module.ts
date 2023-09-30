@@ -10,6 +10,7 @@ import {ChangePasswordComponent} from "./components/change-password/change-passw
 import {
   SuccesfullChangePasswordComponent
 } from "./components/succesfull-change-password/succesfull-change-password.component";
+import {DashboardComponent} from "./views/patients/dashboard/dashboard.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'doctor-profile', component: DoctorProfileComponent },
   { path: 'change-password', component: ChangePasswordComponent},
   { path: 'patientsSuccesfullChangePassword', component: SuccesfullChangePasswordComponent},
+  { path: 'dashboard', component: DashboardComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
