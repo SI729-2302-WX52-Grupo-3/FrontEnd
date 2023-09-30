@@ -1,6 +1,52 @@
 {
-  "doctor": {
-    "id": 1,
-    "name": "Alex"
-  }
+  "medical-history": [
+    {
+      "id": 1,
+      "allergy": "Cats",
+      "pathological": "Broken foot",
+      "weight:": "60",
+      "bodyMass": 28,
+      "pacientId": 1
+    },
+    {
+      "id": 2,
+      "allergy": "Dogs",
+      "pathological": "Conjuntivitis",
+      "weight:": "68",
+      "bodyMass": 28,
+      "pacientId": 1
+    },
+    {
+      "allergy": "Eggs",
+      "pathological": "Conjuntivitis",
+      "weight:": "65",
+      "bodyMass": 28,
+      "pacientId": 1,
+      "id": 3
+    },
+    {
+      "allergy": "Sun",
+      "pathological": "Skin",
+      "bodyMass": "30",
+      "weight": "70",
+      "id": 4,
+      "pacientId": 1
+    },
+    {
+      "allergy": "Water",
+      "pathological": "Hand",
+      "bodyMass": "45",
+      "weight": "65",
+      "id": 5,
+      "pacientId": 1
+    },
+    {
+      "allergy": "Light",
+      "pathological": "Foot",
+      "bodyMass": "40",
+      "weight": "90",
+      "id": 6,
+      "pacientId": 1
+    }
+  ]
 }

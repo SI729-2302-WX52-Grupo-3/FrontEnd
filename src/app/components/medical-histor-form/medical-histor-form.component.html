@@ -1,0 +1,53 @@
+<!-- Edit/Add Form -->
+<h2>{{ editMode ? "Edit Medical History" : "Add Medical History" }}</h2>
+
+<div class="form-section">
+  <form (submit)="onSubmit()" #medicalHistoryForm="ngForm" class="form-row">
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Allergy"
+        name="allergy"
+        required
+        [(ngModel)]="medicalHistory.allergy"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Pathological"
+        name="pathological"
+        required
+        [(ngModel)]="medicalHistory.pathological"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Body Mass"
+        name="bodyMass"
+        required
+        [(ngModel)]="medicalHistory.bodyMass"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Weight"
+        name="weight"
+        required
+        [(ngModel)]="medicalHistory.weight"
+      />
+    </mat-form-field>
+
+    <ng-container *ngIf="editMode; else elseTemplate">
+      <button mat-raised-button color="primary">Update</button>
+      <button mat-raised-button color="warn" (click)="onCancel()">
+        Cancel
+      </button>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <button mat-raised-button color="primary">Add</button>
+    </ng-template>
+  </form>
+</div>
