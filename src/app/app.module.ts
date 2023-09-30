@@ -26,6 +26,8 @@ import { ChangePasswordComponent } from './components/change-password/change-pas
 import { SuccesfullChangePasswordComponent } from './components/succesfull-change-password/succesfull-change-password.component';
 import { DashboardComponent } from './views/patients/dashboard/dashboard.component';
 import { ProfileComponent } from './views/patients/profile/profile.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { NewReviewComponent } from './components/new-review/new-review.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ProfileComponent } from './views/patients/profile/profile.component';
     SuccesfullChangePasswordComponent,
     DashboardComponent,
     ProfileComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    ReviewsComponent,
+    NewReviewComponent
   ],
   imports: [
     BrowserModule,
