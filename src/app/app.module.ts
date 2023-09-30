@@ -25,6 +25,7 @@ import { MedicalHistoryComponent } from './components/medical-history/medical-hi
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
 import { SuccesfullChangePasswordComponent } from './components/succesfull-change-password/succesfull-change-password.component';
 import { DashboardComponent } from './views/patients/dashboard/dashboard.component';
+import { ProfileComponent } from './views/patients/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,8 @@ import { DashboardComponent } from './views/patients/dashboard/dashboard.compone
     ChangePasswordComponent,
     SuccesfullChangePasswordComponent,
     DashboardComponent,
+    ProfileComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
