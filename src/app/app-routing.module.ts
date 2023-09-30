@@ -6,6 +6,10 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 import { LogInComponent } from './views/patients/log-in/log-in.component';
 import { MedicalHistoryComponent } from './components/medical-history/medical-history.component';
 import { DoctorProfileComponent } from './components/doctor-profile/doctor-profile.component';
+import {ChangePasswordComponent} from "./components/change-password/change-password.component";
+import {
+  SuccesfullChangePasswordComponent
+} from "./components/succesfull-change-password/succesfull-change-password.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +17,8 @@ const routes: Routes = [
   { path: 'patientsLogIn', component: LogInComponent },
   { path: 'medical-history', component: MedicalHistoryComponent },
   { path: 'doctor-profile', component: DoctorProfileComponent },
+  { path: 'change-password', component: ChangePasswordComponent },
+  { path: 'patientsSuccesfullChangePassword', component: SuccesfullChangePasswordComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

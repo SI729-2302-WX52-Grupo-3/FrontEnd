@@ -101,4 +101,8 @@ export class LogInCardComponent implements OnInit{
     });
     */
   }
+
+  forgot_password(){
+    this.router.navigate(['/change-password'])
+  }
 }
