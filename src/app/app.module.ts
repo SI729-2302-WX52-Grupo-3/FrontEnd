@@ -55,3 +55,6 @@ import { MedicalHistoryComponent } from './components/medical-history/medical-hi
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+
+//Hello
