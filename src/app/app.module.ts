@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { LogInCardComponent } from './components/log-in-card/log-in-card.component';
 import { LogInComponent } from './views/patients/log-in/log-in.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -29,6 +29,10 @@ import { ProfileComponent } from './views/patients/profile/profile.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { NewReviewComponent } from './components/new-review/new-review.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
+import { AppointmentComponent } from './components/appointment/appointment.component';
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+import { MatTimepickerModule } from 'mat-timepicker';
 
 @NgModule({
   declarations: [
@@ -49,7 +53,8 @@ import { DoctorsComponent } from './components/doctors/doctors.component';
     EditProfileComponent,
     ReviewsComponent,
     NewReviewComponent,
-    DoctorsComponent
+    DoctorsComponent,
+    AppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +70,12 @@ import { DoctorsComponent } from './components/doctors/doctors.component';
     MatInputModule,
     MatSelectModule,
     MatToolbarModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatTimepickerModule,
+    ReactiveFormsModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent],
