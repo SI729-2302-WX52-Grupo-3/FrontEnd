@@ -5,7 +5,6 @@ import {MatTableDataSource} from "@angular/material/table";
 import {HttpClient} from "@angular/common/http";
 import {MatDialog} from "@angular/material/dialog";
 import {FormBuilder, FormGroup} from "@angular/forms";
-import {PatientService} from "../../../service/patient.service";
 import {Observable} from "rxjs";
 
 @Component({

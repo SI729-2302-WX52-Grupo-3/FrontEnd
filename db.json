@@ -15,5 +15,155 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "patients": [
+    {
+      "id": 1,
+      "dni": "923456789",
+      "name": "Juan Pérez",
+      "birthdate": "1990-05-15",
+      "cellphone": "123-456-7890",
+      "email": "juan@example.com",
+      "gender": "Masculino",
+      "password": "secretpassword",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+
+      "id": 2,
+      "dni": "979843256",
+      "name": "Miguel Angel",
+      "birthdate": "1998-08-16",
+      "cellphone": "456-486-1245",
+      "email": "miguel@example.com",
+      "gender": "Masculino",
+      "password": "562341",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+
+    {
+
+      "id": 3,
+      "dni": "952387459",
+      "name": "Lucas Angel",
+      "birthdate": "1999-10-24",
+      "cellphone": "469-458-1458",
+      "email": "lucas@example.com",
+      "gender": "Masculino",
+      "password": "745612",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+
+    {
+
+      "id": 4,
+      "dni": "958963217",
+      "name": "Gabriel Alfredo",
+      "birthdate": "1985-09-23",
+      "cellphone": "175-159-1236",
+      "email": "gabriel@example.com",
+      "gender": "Masculino",
+      "password": "874563",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+
+      "id": 5,
+      "dni": "945896327",
+      "name": "Will Futuri",
+      "birthdate": "1996-08-22",
+      "cellphone": "122-148-1254",
+      "email": "will@example.com",
+      "gender": "Masculino",
+      "password": "987456",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+
+      "id": 6,
+      "dni": "968357214",
+      "name": "Paco Rabann",
+      "birthdate": "1998-07-21",
+      "cellphone": "156-175-7887",
+      "email": "paco@example.com",
+      "gender": "Masculino",
+      "password": "789123",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+
+    {
+
+      "id": 7,
+      "dni": "956328741",
+      "name": "Sebastian Fuentes",
+      "birthdate": "2001-06-20",
+      "cellphone": "987-165-1623",
+      "email": "sebastian@example.com",
+      "gender": "Masculino",
+      "password": "678965",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+
+      "id": 8,
+      "dni": "958963258",
+      "name": "David Heraldo",
+      "birthdate": "2003-05-19",
+      "cellphone": "156-888-9952",
+      "email": "david@example.com",
+      "gender": "Masculino",
+      "password": "564789",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+
+      "id": 9,
+      "dni": "985465985",
+      "name": "Pedro Estrella",
+      "birthdate": "2001-04-18",
+      "cellphone": "153-111-4848",
+      "email": "pedro@example.com",
+      "gender": "Masculino",
+      "password": "456789",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+
+      "id": 10,
+      "dni": "945825756",
+      "name": "Marcos Fuentess",
+      "birthdate": "2000-03-17",
+      "cellphone": "151-196-7858",
+      "email": "marcos@example.com",
+      "gender": "Masculino",
+      "password": "345678",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+
+      "id": 11,
+      "dni": "958685723",
+      "name": "Mario Rodriguez",
+      "birthdate": "2002-02-16",
+      "cellphone": "969-657-3333",
+      "email": "mario@example.com",
+      "gender": "Masculino",
+      "password": "234567",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+
+      "id": 12,
+      "dni": "945862179",
+      "name": "Alexander Danny",
+      "birthdate": "1997-01-15",
+      "cellphone": "156-777-7990",
+      "email": "alexander@example.com",
+      "gender": "Masculino",
+      "password": "456895",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    }
+
+
+  ]
 }
