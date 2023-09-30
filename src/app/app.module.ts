@@ -59,3 +59,6 @@ import { SuccesfullChangePasswordComponent } from './components/succesfull-chang
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+
+//Angie
