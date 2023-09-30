@@ -26,7 +26,7 @@ export class LogInCardComponent implements OnInit{
     );
 
   rpassword: string='';
-  patient: Patient ={ dni: '', name: '', gender:'', birthday: '', email:'', cellphone: '', password:'', photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"};
+  patient: Patient ={ dni: '', name: '', gender:'', birthdate: '', email:'', cellphone: '', password:'', photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"};
   patients: Array<any> = [];
   signInForm: FormGroup;
   constructor(private breakpointObserver: BreakpointObserver, /*private newsSource: SourcesService,*/ private snackBar:MatSnackBar, /*private loginService:LogInService,*/ public builder:FormBuilder, private router: Router) {
@@ -68,7 +68,7 @@ export class LogInCardComponent implements OnInit{
   register() {
 
     if ((this.patient.password == this.rpassword) && this.rpassword !='' && this.patient.email!=''
-      && this.patient.gender !='' && this.patient.dni!='' && this.patient.cellphone!='' && this.patient.name!='' && this.patient.birthday!='') {
+      && this.patient.gender !='' && this.patient.dni!='' && this.patient.cellphone!='' && this.patient.name!='' && this.patient.birthdate!='') {
       /*this.loginService.registerPatient(this.patient).subscribe();*/
       this.snackBar.open('Register Succesfull', '', {duration: 1500})
     } else if (this.patient.password != this.rpassword) {
@@ -76,7 +76,7 @@ export class LogInCardComponent implements OnInit{
     } else {
       this.snackBar.open('Register Failed, Complete all the cells', '', {duration: 1500})
     }
-    this.patient={dni: '', name: '', gender:'', birthday:'', email:'', cellphone: '', password:'', photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"};
+    this.patient={dni: '', name: '', gender:'', birthdate:'', email:'', cellphone: '', password:'', photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"};
     this.rpassword='';
   }
 

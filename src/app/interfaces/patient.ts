@@ -2,7 +2,7 @@ export interface Patient{
   dni: string;
   name: string;
   gender: string;
-  birthday: string;
+  birthdate: string;
   email: string;
   cellphone: string;
   password: string;

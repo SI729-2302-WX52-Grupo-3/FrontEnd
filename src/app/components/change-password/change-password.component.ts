@@ -10,7 +10,7 @@ import {Router} from "@angular/router";
 })
 export class ChangePasswordComponent {
   changePasswordForm: FormGroup
-  patient: Patient ={ dni: '', name: '', gender:'', birthday: '', email:'', cellphone: '', password:'', photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"};
+  patient: Patient ={ dni: '', name: '', gender:'', birthdate: '', email:'', cellphone: '', password:'', photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"};
 
 
   constructor( public builder:FormBuilder, private  router: Router) {

@@ -55,7 +55,7 @@
 
           <mat-form-field class="example-mid-width">
             <mat-label>Birthday</mat-label>
-            <input type="date" matInput placeholder="Birthday" value="" [(ngModel)]="patient.birthday" required/>
+            <input type="date" matInput placeholder="Birthday" value="" [(ngModel)]="patient.birthdate" required/>
             <mat-error *ngIf="signInForm.controls['birthday'].errors?.['required']">
               Birthday is required
             </mat-error>

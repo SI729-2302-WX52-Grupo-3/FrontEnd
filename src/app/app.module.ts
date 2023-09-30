@@ -33,6 +33,9 @@ import { AppointmentComponent } from './components/appointment/appointment.compo
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import { MatTimepickerModule } from 'mat-timepicker';
+import {MatTableModule} from "@angular/material/table";
+import {HttpClientModule} from "@angular/common/http";
+import {DialogModule} from "@angular/cdk/dialog";
 
 @NgModule({
   declarations: [
@@ -54,7 +57,8 @@ import { MatTimepickerModule } from 'mat-timepicker';
     ReviewsComponent,
     NewReviewComponent,
     DoctorsComponent,
-    AppointmentComponent
+    AppointmentComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -73,7 +77,10 @@ import { MatTimepickerModule } from 'mat-timepicker';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTimepickerModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule,
+    HttpClientModule,
+    DialogModule
 
 
   ],
