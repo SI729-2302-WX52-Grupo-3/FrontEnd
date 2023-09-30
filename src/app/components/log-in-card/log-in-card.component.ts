@@ -81,7 +81,8 @@ export class LogInCardComponent implements OnInit{
   }
 
   login(){
-    //IF USER IS FOUND
+    /*
+     //IF USER IS FOUND
     const patientFound = this.patients.find(patient => patient.dni== this.patient.dni && patient.password == this.patient.password)
     if(patientFound){
       this.snackBar.open('Login Succesfull','',{duration:1000})
@@ -92,6 +93,8 @@ export class LogInCardComponent implements OnInit{
     else{
       this.snackBar.open('Login Failed','',{duration:1000})
     }
+    * */
+   this.router.navigate(['/dashboard']);
   }
 
   forgot_password(){
