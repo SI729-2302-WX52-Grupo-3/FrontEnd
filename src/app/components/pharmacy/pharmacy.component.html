@@ -1,14 +1,6 @@
 <div class="table-wrapper">
   <h1>Appointments Catalogue</h1>
 
-  <app-pharmacy-form
-    (editCanceled)="onCancelEdit()"
-    (pharmacyAdded)="onPharmacyAdded($event)"
-    (pharmacyUpdated)="onPharmacyUpdated($event)"
-    [editMode]="isEditMode"
-    [pharmacy]="PharmacyData"
-  />
-
   <!-- Data Table -->
   <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table matSort>
     <ng-container matColumnDef="id">
@@ -51,7 +43,7 @@
     <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
     <tr
       *matRowDef="let row; columns: displayedColumns"
-      [ngClass]="{ 'editable-row': PharmacyData.id === row.id }"
+      [ngClass]="{ 'editable-row': pharmacyData.id === row.id }"
       mat-row
     ></tr>
   </table>

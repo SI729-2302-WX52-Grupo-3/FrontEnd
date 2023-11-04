@@ -1,5 +1,6 @@
 .appointment-container {
   padding: 20px;
+  text-align: center;
 }
 
 .mat-form-field {
@@ -11,4 +12,13 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
+}
+
+.appointment-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  gap: 0.5rem;
 }

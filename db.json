@@ -247,5 +247,17 @@
       "specialty": "Dermatologia",
       "email": "eliza@example.com"
     }
+  ],
+  "appointments": [
+    {
+      "time": "02:00 pm",
+      "description": "My back hurts",
+      "date": "Mon Nov 13 2023",
+      "patientId": 1,
+      "medicineId": 1,
+      "paymentId": 1,
+      "doctorId": 2,
+      "id": 1
+    }
   ]
 }

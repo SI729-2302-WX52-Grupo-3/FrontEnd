@@ -1,26 +1,27 @@
 <mat-card class="appointment-container">
-  <h2>Solicitar Cita</h2>
+  <h2>Appointment width {{ doctor?.name }}</h2>
 
-  <mat-form-field>
-    <input matInput [matDatepicker]="picker" placeholder="Selecciona el día" [(ngModel)]="selectedDate">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
+  <form [formGroup]="appointmentForm" (ngSubmit)="submitappointment()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Choose Date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Hora</mat-label>
-    <input matTimepicker>
-    <mat-icon matSuffix>access_time</mat-icon>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-label>Choose Hour</mat-label>
+      <input matInput formControlName="time" />
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Doctor</mat-label>
-    <mat-select [(ngModel)]="selectedDoctor">
-      <mat-option *ngFor="let doctor of doctors" [value]="doctor.id">{{ doctor.name }}</mat-option>
-    </mat-select>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
 
-  <div class="button-container">
-    <button mat-raised-button color="primary" (click)="goToPayment()">Ir a pagar</button>
-  </div>
+    <button mat-raised-button color="primary" type="submit">Confirm</button>
+  </form>
 </mat-card>

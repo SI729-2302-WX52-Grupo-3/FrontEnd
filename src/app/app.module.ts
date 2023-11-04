@@ -30,14 +30,18 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
 import { NewReviewComponent } from './components/new-review/new-review.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
-import {MatDatepickerModule} from "@angular/material/datepicker";
-import {MatNativeDateModule} from "@angular/material/core";
-import { MatTimepickerModule } from 'mat-timepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+// import { MatTimepickerModule } from 'mat-timepicker';
 import { MatTableModule } from '@angular/material/table';
 import { NewMedicalHistoryComponent } from './components/new-medical-history/new-medical-history.component';
 import { MedicalHistorFormComponent } from './components/medical-histor-form/medical-histor-form.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PharmacyComponent } from './pharmacy/pharmacy.component';
+import { NewPharmacyComponent } from './components/pharmacy/pharmacy.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MainDashboardComponent } from './views/patients/main-dashboard/main-dashboard.component';
+import { DoctorsListComponent } from './views/patients/doctors-list/doctors-list.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +66,9 @@ import { PharmacyComponent } from './pharmacy/pharmacy.component';
     AppointmentComponent,
     NewMedicalHistoryComponent,
     MedicalHistorFormComponent,
-    PharmacyComponent,
+    NewPharmacyComponent,
+    MainDashboardComponent,
+    DoctorsListComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,11 +86,14 @@ import { PharmacyComponent } from './pharmacy/pharmacy.component';
     MatToolbarModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatTimepickerModule,
+    // MatTimepickerModule,
     ReactiveFormsModule,
     MatTableModule,
 
     HttpClientModule,
+    MatSidenavModule,
+
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

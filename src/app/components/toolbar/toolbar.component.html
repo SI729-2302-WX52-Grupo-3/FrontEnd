@@ -1,3 +1,43 @@
 <mat-toolbar>
-    <img src="assets/images/logo.png">
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <img src="assets/images/logo.png" />
 </mat-toolbar>
+
+<mat-drawer-container autosize>
+  <mat-drawer #drawer opened="true" mode="side">
+    <mat-nav-list>
+      <mat-list-item>
+        <button mat-button routerLink="/dashboard">
+          <mat-icon>home</mat-icon>Home
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button routerLink="/profile">
+          <mat-icon>person</mat-icon>Profile
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button routerLink="/prescription">
+          <mat-icon>medication_liquied</mat-icon>Prescription
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button routerLink="/news">
+          <mat-icon>public</mat-icon>News
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button routerLink="/settings">
+          <mat-icon>settings</mat-icon>Settings
+        </button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-drawer-content>
+</mat-drawer-container>
