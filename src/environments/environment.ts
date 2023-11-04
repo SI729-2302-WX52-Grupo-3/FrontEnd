@@ -1,3 +1,3 @@
 export const environment = {
-  serverBasePath: undefined,
+  serverBasePath: 'https://medicare.fly.dev/',
 };
