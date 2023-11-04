@@ -258,6 +258,24 @@
       "paymentId": 1,
       "doctorId": 2,
       "id": 1
+    },
+    {
+      "time": "09:00 am",
+      "description": "Leg broken",
+      "date": "Wed Nov 15 2023",
+      "patientId": 1,
+      "medicineId": 1,
+      "paymentId": 1,
+      "doctorId": 1,
+      "id": 2
+    }
+  ],
+  "historical-data": [
+    {
+      "id": 1,
+      "appointmentId": 1,
+      "date": "Mon Nov 13 2023",
+      "description": "This is new historical data"
     }
   ]
 }

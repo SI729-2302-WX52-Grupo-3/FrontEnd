@@ -42,6 +42,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MainDashboardComponent } from './views/patients/main-dashboard/main-dashboard.component';
 import { DoctorsListComponent } from './views/patients/doctors-list/doctors-list.component';
+import { RecordComponent } from './views/patients/record/record.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { DoctorsListComponent } from './views/patients/doctors-list/doctors-list
     NewPharmacyComponent,
     MainDashboardComponent,
     DoctorsListComponent,
+    RecordComponent,
   ],
   imports: [
     BrowserModule,

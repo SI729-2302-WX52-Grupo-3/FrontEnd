@@ -18,12 +18,13 @@ import { NewMedicalHistoryComponent } from './components/new-medical-history/new
 import { NewPharmacyComponent } from './components/pharmacy/pharmacy.component';
 import { MainDashboardComponent } from './views/patients/main-dashboard/main-dashboard.component';
 import { DoctorsListComponent } from './views/patients/doctors-list/doctors-list.component';
+import { RecordComponent } from './views/patients/record/record.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'edit-profile', component: EditProfileComponent },
   { path: 'patientsLogIn', component: LogInComponent },
-  { path: 'medical-history', component: MedicalHistoryComponent },
+  { path: 'medical-history', component: RecordComponent },
   // { path: 'doctor-profile', component: DoctorProfileComponent },
   { path: 'change-password', component: ChangePasswordComponent },
   {
