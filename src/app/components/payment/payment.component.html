@@ -12,13 +12,13 @@
   </div>
 
   <div class="form-container">
-    <form action="">
+    <form (submit)="pay()" [formGroup]="payForm" class="form-row" id="payForm">
       <mat-form-field class="form-input">
         <span matPrefix
           ><img src="assets/images/usuario.png" alt="usuario" width="20"
         /></span>
         <mat-label>Card Holder</mat-label>
-        <input matInput type="text" />
+        <input matInput type="text" formControlName="cardHolder" />
       </mat-form-field>
 
       <mat-form-field class="form-input">
@@ -26,7 +26,7 @@
           ><img src="assets/images/ntarjeta.png" alt="usuario" width="20"
         /></span>
         <mat-label>Card Number</mat-label>
-        <input matInput type="text" />
+        <input matInput type="text" formControlName="cardNumber" />
       </mat-form-field>
 
       <div class="date-cvv">
@@ -35,7 +35,7 @@
             ><img src="assets/images/fecha.png" alt="usuario" width="20"
           /></span>
           <mat-label>Expiration Date</mat-label>
-          <input matInput type="date" />
+          <input matInput type="date" formControlName="expirationDate" />
         </mat-form-field>
 
         <mat-form-field class="form-input">
@@ -43,7 +43,7 @@
             ><img src="assets/images/cvv.png" alt="usuario" width="20"
           /></span>
           <mat-label>CVV</mat-label>
-          <input matInput type="text" />
+          <input matInput type="text" formControlName="cvv" />
         </mat-form-field>
       </div>
       <div class="save-details">
@@ -59,6 +59,6 @@
     <div>
       <p>Total price: <span>$100.00</span></p>
     </div>
-    <button>Confirm</button>
+    <button type="submit" form="payForm">Confirm</button>
   </div>
 </div>

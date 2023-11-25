@@ -21,15 +21,6 @@ export class DoctorsLoginComponent {
     );
 
   rpassword: string = '';
-  patient: Patient = {
-    name: '',
-    email: '',
-    age: '',
-    password: '',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png',
-  };
-  patients: Array<any> = [];
   loginInForm = new FormGroup({
     email: new FormControl(''),
     password: new FormControl(''),

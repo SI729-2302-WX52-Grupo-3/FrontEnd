@@ -25,7 +25,7 @@ import { LoginComponent } from './views/doctors/login/login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'edit-profile', component: EditProfileComponent },
+  { path: 'edit-profile/:id', component: EditProfileComponent },
   { path: 'patientsLogIn', component: LogInComponent },
   { path: 'doctorsLogIn', component: LoginComponent },
   { path: 'medical-history', component: RecordComponent },
@@ -37,7 +37,6 @@ const routes: Routes = [
   },
   { path: 'dashboard', component: MainDashboardComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'edit-profile', component: EditProfileComponent },
   { path: 'reviews', component: ReviewsComponent },
   { path: 'new-review', component: NewReviewComponent },
   { path: 'doctors', component: DoctorsListComponent },
@@ -45,7 +44,7 @@ const routes: Routes = [
   { path: 'appointment/doctor/:id', component: AppointmentComponent },
   { path: 'new-medical-history', component: NewMedicalHistoryComponent },
   { path: 'pharmacy', component: NewPharmacyComponent },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'appointment/:id/payment', component: PaymentComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

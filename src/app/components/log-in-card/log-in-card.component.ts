@@ -31,10 +31,12 @@ export class LogInCardComponent implements OnInit {
 
   rpassword: string = '';
   patient: Patient = {
+    id: 0,
     name: '',
     email: '',
     age: '',
     password: '',
+    lastName: '',
     photo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png',
   };
