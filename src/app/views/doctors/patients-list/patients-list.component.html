@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>View Patients</h1>
+  <div class="main-container">
+    <div class="options">
+      <div class="option-container" *ngFor="let patient of patients">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1698969600&semt=sph"
+          alt="doctors"
+        />
+        <div class="doctor-data">
+          <h2>Dr. {{ patient.name }} {{ patient.lastname }}</h2>
+          <span>Area: {{ patient.age }}</span>
+          <a [routerLink]="['/patients', patient.id]">See profile ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

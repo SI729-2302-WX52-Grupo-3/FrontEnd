@@ -3,22 +3,22 @@
   <div class="main-container">
     <h2>What do you need today?</h2>
     <div class="options">
-      <div class="option-container">
+      <div *ngIf="!isDoctor" class="option-container">
         <a routerLink="/doctors">
           <img src="assets/images/enfermera.png" alt="doctors" />
           <p>Doctors</p>
+        </a>
+      </div>
+      <div *ngIf="isDoctor" class="option-container">
+        <a routerLink="/patients">
+          <img src="assets/images/paciente.png" alt="patients" />
+          <p>Patients</p>
         </a>
       </div>
       <div class="option-container">
         <a routerLink="/medical-history">
           <img src="assets/images/historial-medico.png" alt="medical history" />
           <p>Medical History</p>
-        </a>
-      </div>
-      <div class="option-container">
-        <a routerLink="/prescription">
-          <img src="assets/images/prescriptions.png" alt="prescription" />
-          <p>Prescription</p>
         </a>
       </div>
     </div>

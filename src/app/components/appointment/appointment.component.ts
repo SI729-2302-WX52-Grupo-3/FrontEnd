@@ -34,7 +34,6 @@ export class AppointmentComponent implements OnInit {
 
     this.appointmentForm = this.fb.group({
       date: [''],
-      time: [''],
       description: [''],
     });
     this.user = JSON.parse(localStorage.getItem('user')!);
@@ -54,13 +53,13 @@ export class AppointmentComponent implements OnInit {
     const { date, ...rest } = this.appointmentForm.getRawValue();
     const data = {
       ...rest,
-      date: new Date(date).toDateString(),
+      date: new Date(date),
       patientId: this.user?.id,
       doctorId: parseInt(this.doctorId!),
     };
-    this.router.navigate([`/appointment/${1}/payment`]);
-    // this.appointmentService.create(data).subscribe((res) => {
-    //   console.log('Created', res.id);
-    // });
+    this.appointmentService.create(data).subscribe((res) => {
+      console.log('Created', res.id);
+      this.router.navigate([`/appointment/${res.id}/payment`]);
+    });
   }
 }

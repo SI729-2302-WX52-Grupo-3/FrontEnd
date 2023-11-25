@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  // serverBasePath: 'https://medicare.fly.dev/',
-  serverBasePath: 'http://localhost:3000/',
+  serverBasePath: 'https://medicare.fly.dev/',
+  // serverBasePath: 'http://localhost:3000/',
 };

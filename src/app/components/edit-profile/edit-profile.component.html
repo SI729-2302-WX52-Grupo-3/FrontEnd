@@ -31,9 +31,14 @@
           <input type="email" formControlName="email" />
         </div>
 
-        <div class="input-box">
+        <div *ngIf="!isDoctor" class="input-box">
           <label>Age</label>
           <input type="text" formControlName="age" />
+        </div>
+
+        <div *ngIf="isDoctor" class="input-box">
+          <label>Speciality</label>
+          <input type="text" formControlName="speciality" />
         </div>
       </div>
       <button type="submit">Save</button>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Doctor } from 'src/app/interfaces/doctor';
 import { Patient } from 'src/app/interfaces/patient';
 
 @Component({
@@ -7,7 +8,7 @@ import { Patient } from 'src/app/interfaces/patient';
   styleUrls: ['./profile.component.css'],
 })
 export class ProfileComponent implements OnInit {
-  user: Patient | null = null;
+  user: any = null;
 
   constructor() {}
 

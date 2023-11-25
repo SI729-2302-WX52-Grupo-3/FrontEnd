@@ -1,18 +1,18 @@
 import {
+  HttpHeaders,
   HttpClient,
   HttpErrorResponse,
-  HttpHeaders,
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { throwError, Observable, retry, catchError } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { catchError, Observable, retry, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class DoctorService {
+export class PatientService {
   basePath: string = `${environment.serverBasePath}`;
-  resourceEndpoint: string = 'doctors';
+  resourceEndpoint: string = 'patients';
 
   httpOptions = {
     headers: new HttpHeaders({

@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 })
 export class RecordService {
   basePath: string = `${environment.serverBasePath}`;
-  resourceEndpoint: string = 'historical-data';
+  resourceEndpoint: string = 'records';
 
   httpOptions = {
     headers: new HttpHeaders({

@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Patient Information</h1>
+
+  <div class="container_info">
+    <div class="info_top">
+      <img
+        src="https://img.freepik.com/premium-photo/asian-female-patient-with-happiness-lying-bed-hospital_33413-1834.jpg"
+        [alt]="patient?.id"
+      />
+      <div class="doctor-info">
+        <h1>{{ patient?.name }} {{ patient?.lastname }}</h1>
+        <h3>{{ patient?.age }}</h3>
+      </div>
+    </div>
+    <div class="container_description">
+      <div class="experience">
+        <div class="experience_data">
+          <h3>Cancer</h3>
+          <p>Not Detected</p>
+        </div>
+        <div class="experience_data">
+          <h3>Years of experience</h3>
+          <p>5+</p>
+        </div>
+      </div>
+      <div class="education">
+        <h3>Education</h3>
+        <ul>
+          <li>Bachiller en Arquitectura UPC</li>
+          <li>Bachiller en Etica San Marcos</li>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>

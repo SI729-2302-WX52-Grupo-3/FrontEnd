@@ -37,7 +37,9 @@ export class DoctorsLoginComponent {
     private breakpointObserver: BreakpointObserver,
     private router: Router,
     private authService: AuthService
-  ) {}
+  ) {
+    this.authService.resourceEndpoint = 'doctors';
+  }
 
   get lopassword() {
     return this.loginInForm.controls['password'];
@@ -67,12 +69,18 @@ export class DoctorsLoginComponent {
     return this.signUpForm.controls['speciality'];
   }
   signUp() {
-    this.authService
-      .register(this.signUpForm.getRawValue() as any)
-      .subscribe((res: any) => {
-        localStorage.setItem('user', JSON.stringify(res));
-        this.router.navigate(['/dashboard']);
-      });
+    const { lastName, age, ...rest } = this.signUpForm.getRawValue() as any;
+    const data = {
+      ...rest,
+      lastname: lastName,
+      age: parseInt(age!),
+    };
+    this.authService.register(data).subscribe((res: any) => {
+      localStorage.setItem('user', JSON.stringify(res));
+      localStorage.setItem('doctor', 'true');
+      localStorage.setItem('patient', 'false');
+      this.router.navigate(['/dashboard']);
+    });
   }
 
   login() {
@@ -83,6 +91,8 @@ export class DoctorsLoginComponent {
       };
       this.authService.login(loginData).subscribe((res: any) => {
         localStorage.setItem('user', JSON.stringify(res));
+        localStorage.setItem('doctor', 'true');
+        localStorage.setItem('patient', 'false');
         this.router.navigate(['/dashboard']);
       });
     }

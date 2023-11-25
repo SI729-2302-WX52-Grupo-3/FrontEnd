@@ -46,6 +46,8 @@ import { RecordComponent } from './views/patients/record/record.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { DoctorsLoginComponent } from './components/doctors-login/doctors-login.component';
 import { LoginComponent } from './views/doctors/login/login.component';
+import { PatientsListComponent } from './views/doctors/patients-list/patients-list.component';
+import { PatientProfileComponent } from './components/patient-profile/patient-profile.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +79,8 @@ import { LoginComponent } from './views/doctors/login/login.component';
     PaymentComponent,
     DoctorsLoginComponent,
     LoginComponent,
+    PatientsListComponent,
+    PatientProfileComponent,
   ],
   imports: [
     BrowserModule,

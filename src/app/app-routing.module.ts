@@ -22,6 +22,8 @@ import { RecordComponent } from './views/patients/record/record.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { DoctorsLoginComponent } from './components/doctors-login/doctors-login.component';
 import { LoginComponent } from './views/doctors/login/login.component';
+import { PatientsListComponent } from './views/doctors/patients-list/patients-list.component';
+import { PatientProfileComponent } from './components/patient-profile/patient-profile.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -40,7 +42,9 @@ const routes: Routes = [
   { path: 'reviews', component: ReviewsComponent },
   { path: 'new-review', component: NewReviewComponent },
   { path: 'doctors', component: DoctorsListComponent },
+  { path: 'patients', component: PatientsListComponent },
   { path: 'doctors/:id', component: DoctorProfileComponent },
+  { path: 'patients/:id', component: PatientProfileComponent },
   { path: 'appointment/doctor/:id', component: AppointmentComponent },
   { path: 'new-medical-history', component: NewMedicalHistoryComponent },
   { path: 'pharmacy', component: NewPharmacyComponent },

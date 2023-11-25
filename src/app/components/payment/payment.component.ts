@@ -2,6 +2,7 @@ import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { PaymentService } from 'src/app/shared/payment.service';
 
 @Component({
   selector: 'app-payment',
@@ -18,15 +19,23 @@ export class PaymentComponent {
     cvv: new FormControl(''),
   });
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private paymentService: PaymentService,
+    private router: Router
+  ) {
     this.appointmentId = this.route.snapshot.paramMap.get('id');
     console.log(this.appointmentId);
   }
   pay() {
     const data = {
       ...this.payForm.getRawValue(),
-      appointmentId: this.appointmentId,
+      appointment: this.appointmentId,
     };
-    console.log(data);
+    this.paymentService.create(data).subscribe((res: any) => {
+      console.log(res);
+
+      this.router.navigate([`/dashboard`]);
+    });
   }
 }

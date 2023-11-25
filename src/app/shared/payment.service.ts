@@ -1,18 +1,18 @@
 import {
+  HttpHeaders,
   HttpClient,
   HttpErrorResponse,
-  HttpHeaders,
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { throwError, retry, catchError } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { catchError, Observable, retry, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class DoctorService {
+export class PaymentService {
   basePath: string = `${environment.serverBasePath}`;
-  resourceEndpoint: string = 'doctors';
+  resourceEndpoint: string = 'payments';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -43,25 +43,15 @@ export class DoctorService {
     return `${this.basePath}${this.resourceEndpoint}`;
   }
 
-  getAll(): Observable<any> {
+  create(item: any) {
     return this.http
-      .get<any>(this.resourcePath(), this.httpOptions)
+      .post<any>(this.resourcePath(), JSON.stringify(item), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
-  getById(id: any) {
+  getAllById(id?: number) {
     return this.http
       .get<any>(`${this.resourcePath()}/${id}`, this.httpOptions)
-      .pipe(retry(2), catchError(this.handleError));
-  }
-
-  update(id: any, item: any) {
-    return this.http
-      .put<any>(
-        `${this.resourcePath()}/${id}`,
-        JSON.stringify(item),
-        this.httpOptions
-      )
       .pipe(retry(2), catchError(this.handleError));
   }
 }

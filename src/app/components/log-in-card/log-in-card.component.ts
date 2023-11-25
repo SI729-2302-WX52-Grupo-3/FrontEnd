@@ -36,7 +36,7 @@ export class LogInCardComponent implements OnInit {
     email: '',
     age: '',
     password: '',
-    lastName: '',
+    lastname: '',
     photo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png',
   };
@@ -87,12 +87,18 @@ export class LogInCardComponent implements OnInit {
     return this.signUpForm.controls['age'];
   }
   signUp() {
-    this.authService
-      .register(this.signUpForm.getRawValue() as any)
-      .subscribe((res: any) => {
-        localStorage.setItem('user', JSON.stringify(res));
-        this.router.navigate(['/dashboard']);
-      });
+    const { lastName, age, ...rest } = this.signUpForm.getRawValue() as any;
+    const data = {
+      ...rest,
+      lastname: lastName,
+      age: parseInt(age!),
+    };
+    this.authService.register(data).subscribe((res: any) => {
+      localStorage.setItem('user', JSON.stringify(res));
+      localStorage.setItem('patient', 'true');
+      localStorage.setItem('doctor', 'false');
+      this.router.navigate(['/dashboard']);
+    });
   }
 
   login() {
@@ -103,6 +109,8 @@ export class LogInCardComponent implements OnInit {
       };
       this.authService.login(loginData).subscribe((res: any) => {
         localStorage.setItem('user', JSON.stringify(res));
+        localStorage.setItem('doctor', 'false');
+        localStorage.setItem('patient', 'true');
         this.router.navigate(['/dashboard']);
       });
     }

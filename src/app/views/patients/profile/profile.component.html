@@ -4,8 +4,9 @@
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugMiP022tSCh_yvyU8S4ghm05imJepNLJNA&usqp=CAU"
       alt="Foto del paciente"
     />
-    <h2>Nombre: {{ user?.name }} {{ user?.lastName }}</h2>
-    <h2>Edad: {{ user?.age }}</h2>
+    <h2>Nombre: {{ user?.name }} {{ user?.lastname }}</h2>
+    <h2 *ngIf="user?.age">Edad: {{ user?.age }}</h2>
+    <h2 *ngIf="user?.speciality">Speciality: {{ user?.speciality }}</h2>
     <h2>Correo: {{ user?.email }}</h2>
     <button
       mat-raised-button
