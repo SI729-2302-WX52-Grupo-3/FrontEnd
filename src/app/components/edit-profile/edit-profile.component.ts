@@ -10,7 +10,7 @@ import { PatientService } from 'src/app/shared/patient.service';
   styleUrls: ['./edit-profile.component.css'],
 })
 export class EditProfileComponent implements OnInit {
-  user: Patient | null = null;
+  user: any = null;
   isDoctor = false;
 
   updatePatientForm = new FormGroup({
@@ -69,6 +69,7 @@ export class EditProfileComponent implements OnInit {
       lastName: this.user?.lastname,
       age: this.user?.age,
       email: this.user?.email,
+      speciality: this.user?.speciality,
     });
   }
 }
