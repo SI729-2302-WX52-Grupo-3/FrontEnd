@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Doctor } from 'src/app/interfaces/doctor';
 import { AppointmentService } from 'src/app/shared/appointment.service';
 import { DoctorService } from 'src/app/shared/doctor.service';
@@ -24,7 +24,8 @@ export class AppointmentComponent implements OnInit {
     private route: ActivatedRoute,
     private doctorService: DoctorService,
     private fb: FormBuilder,
-    private appointmentService: AppointmentService
+    private appointmentService: AppointmentService,
+    private router: Router
   ) {
     this.doctorId = this.route.snapshot.paramMap.get('id');
 
@@ -58,8 +59,9 @@ export class AppointmentComponent implements OnInit {
       paymentId,
       doctorId: parseInt(this.doctorId!),
     };
-    this.appointmentService.create(data).subscribe((res) => {
-      console.log('Created', res.id);
-    });
+    this.router.navigate(['/payment', { data: JSON.stringify(data) }]);
+    // this.appointmentService.create(data).subscribe((res) => {
+    //   console.log('Created', res.id);
+    // });
   }
 }

@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="steps-container">
+    <img src="assets/images/pasos.png" alt="steps" />
+    <div class="payment-methods">
+      <h2>Select a payment method</h2>
+      <div>
+        <img src="assets/images/paypal.png" alt="paypal" />
+        <img src="assets/images/visa.png" alt="visa" />
+        <img src="assets/images/mastercard.png" alt="mastercard" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <form action="">
+      <mat-form-field class="form-input">
+        <span matPrefix
+          ><img src="assets/images/usuario.png" alt="usuario" width="20"
+        /></span>
+        <mat-label>Card Holder</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+
+      <mat-form-field class="form-input">
+        <span matPrefix
+          ><img src="assets/images/ntarjeta.png" alt="usuario" width="20"
+        /></span>
+        <mat-label>Card Number</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+
+      <div class="date-cvv">
+        <mat-form-field class="form-input">
+          <span matPrefix
+            ><img src="assets/images/fecha.png" alt="usuario" width="20"
+          /></span>
+          <mat-label>Expiration Date</mat-label>
+          <input matInput type="date" />
+        </mat-form-field>
+
+        <mat-form-field class="form-input">
+          <span matPrefix
+            ><img src="assets/images/cvv.png" alt="usuario" width="20"
+          /></span>
+          <mat-label>CVV</mat-label>
+          <input matInput type="text" />
+        </mat-form-field>
+      </div>
+      <div class="save-details">
+        <input type="checkbox" />
+        <span>Save card details for future purchases</span>
+      </div>
+    </form>
+
+    <img class="tarjeta-image" src="assets/images/tarjeta.png" alt="" />
+  </div>
+
+  <div class="total-price">
+    <div>
+      <p>Total price: <span>$100.00</span></p>
+    </div>
+    <button>Confirm</button>
+  </div>
+</div>

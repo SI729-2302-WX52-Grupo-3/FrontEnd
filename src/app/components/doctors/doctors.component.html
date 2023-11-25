@@ -1,79 +1,85 @@
-<app-toolbar *ngIf="authService.isLoggedIn"></app-toolbar>
+<app-toolbar *ngIf="isLoggedIn"></app-toolbar>
 
-<button mat-raised-button color="primary" (click)="showAddForm = true">Agregar Paciente</button>
+<button mat-raised-button color="primary" (click)="showAddForm = true">
+  Agregar Paciente
+</button>
 <form [formGroup]="addForm" *ngIf="showAddForm">
   <h2>Agregar Paciente</h2>
   <mat-form-field>
-    <input matInput formControlName="dni" placeholder="DNI">
+    <input matInput formControlName="dni" placeholder="DNI" />
   </mat-form-field>
   <mat-form-field>
-    <input matInput formControlName="name" placeholder="Nombre">
+    <input matInput formControlName="name" placeholder="Nombre" />
   </mat-form-field>
   <mat-form-field>
-    <input matInput formControlName="lastname" placeholder="Appellido">
+    <input matInput formControlName="lastname" placeholder="Appellido" />
   </mat-form-field>
   <mat-form-field>
-    <input matInput formControlName="specialty" placeholder="Specialty">
+    <input matInput formControlName="specialty" placeholder="Specialty" />
   </mat-form-field>
   <mat-form-field>
-    <input matInput formControlName="email" placeholder="Email">
+    <input matInput formControlName="email" placeholder="Email" />
   </mat-form-field>
-  <button mat-raised-button color="primary" (click)="submitAddForm()">Guardar</button>
+  <button mat-raised-button color="primary" (click)="submitAddForm()">
+    Guardar
+  </button>
 </form>
 
-<form *ngIf="this.editVisible!" [formGroup]="editForm" (ngSubmit)="submitEditForm()">
+<form
+  *ngIf="this.editVisible!"
+  [formGroup]="editForm"
+  (ngSubmit)="submitEditForm()"
+>
   <mat-form-field>
-    <input matInput formControlName="dni" placeholder="DNI">
+    <input matInput formControlName="dni" placeholder="DNI" />
   </mat-form-field>
   <mat-form-field>
-    <input matInput formControlName="name" placeholder="Nombre">
+    <input matInput formControlName="name" placeholder="Nombre" />
   </mat-form-field>
   <mat-form-field>
-    <input matInput formControlName="lastname" placeholder="Lastname">
+    <input matInput formControlName="lastname" placeholder="Lastname" />
   </mat-form-field>
   <mat-form-field>
-    <input matInput formControlName="email" placeholder="Email">
+    <input matInput formControlName="email" placeholder="Email" />
   </mat-form-field>
   <mat-form-field>
-    <input matInput formControlName="specialty" placeholder="Specialty">
+    <input matInput formControlName="specialty" placeholder="Specialty" />
   </mat-form-field>
 
-
-  <button mat-raised-button color="primary" type="submit">Guardar Cambios</button>
+  <button mat-raised-button color="primary" type="submit">
+    Guardar Cambios
+  </button>
 </form>
-
-
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
   <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef> No. </th>
-    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    <th mat-header-cell *matHeaderCellDef>No.</th>
+    <td mat-cell *matCellDef="let element">{{ element.id }}</td>
   </ng-container>
 
   <ng-container matColumnDef="dni">
-    <th mat-header-cell *matHeaderCellDef> DNI </th>
-    <td mat-cell *matCellDef="let element"> {{element.dni}} </td>
+    <th mat-header-cell *matHeaderCellDef>DNI</th>
+    <td mat-cell *matCellDef="let element">{{ element.dni }}</td>
   </ng-container>
 
   <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    <th mat-header-cell *matHeaderCellDef>Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
   </ng-container>
 
   <ng-container matColumnDef="lastname">
-    <th mat-header-cell *matHeaderCellDef> LastName </th>
-    <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
+    <th mat-header-cell *matHeaderCellDef>LastName</th>
+    <td mat-cell *matCellDef="let element">{{ element.lastname }}</td>
   </ng-container>
 
   <ng-container matColumnDef="email">
-    <th mat-header-cell *matHeaderCellDef> Email </th>
-    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    <th mat-header-cell *matHeaderCellDef>Email</th>
+    <td mat-cell *matCellDef="let element">{{ element.email }}</td>
   </ng-container>
 
   <ng-container matColumnDef="specialty">
-    <th mat-header-cell *matHeaderCellDef> Specialty </th>
-    <td mat-cell *matCellDef="let element"> {{element.specialty}} </td>
+    <th mat-header-cell *matHeaderCellDef>Specialty</th>
+    <td mat-cell *matCellDef="let element">{{ element.speciality }}</td>
   </ng-container>
 
   <ng-container matColumnDef="edit">
@@ -94,7 +100,6 @@
     </td>
   </ng-container>
 
-
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>

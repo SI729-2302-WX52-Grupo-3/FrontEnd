@@ -86,16 +86,16 @@
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-              <mat-label>Age</mat-label>
+              <mat-label>Speciality</mat-label>
               <input
                 type="text"
                 matInput
-                placeholder="Age"
-                formControlName="age"
+                placeholder="Specialty"
+                formControlName="speciality"
                 required
               />
-              <mat-error *ngIf="age.errors?.['required']">
-                Age is required
+              <mat-error *ngIf="speciality.errors?.['required']">
+                Speciality is required
               </mat-error>
               <mat-icon matSuffix>call</mat-icon>
             </mat-form-field>

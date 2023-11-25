@@ -9,14 +9,14 @@ import { DoctorService } from 'src/app/shared/doctor.service';
   styleUrls: ['./doctor-profile.component.css'],
 })
 export class DoctorProfileComponent implements OnInit {
-  heroId: string | null = '';
+  doctorId: string | null = '';
   doctor: Doctor | null = null;
 
   constructor(
     private route: ActivatedRoute,
     private doctorService: DoctorService
   ) {
-    this.heroId = this.route.snapshot.paramMap.get('id');
+    this.doctorId = this.route.snapshot.paramMap.get('id');
   }
 
   getDoctorData(heroId: string) {
@@ -26,6 +26,6 @@ export class DoctorProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.heroId) this.getDoctorData(this.heroId);
+    if (this.doctorId) this.getDoctorData(this.doctorId);
   }
 }

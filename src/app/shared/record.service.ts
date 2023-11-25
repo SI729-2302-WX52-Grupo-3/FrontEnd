@@ -1,18 +1,18 @@
 import {
+  HttpHeaders,
   HttpClient,
   HttpErrorResponse,
-  HttpHeaders,
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { throwError, retry, catchError } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { catchError, Observable, retry, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class AppointmentService {
+export class RecordService {
   basePath: string = `${environment.serverBasePath}`;
-  resourceEndpoint: string = 'appointments';
+  resourceEndpoint: string = 'historical-data';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -51,7 +51,7 @@ export class AppointmentService {
 
   getAllById(id?: number) {
     return this.http
-      .get<any>(`${this.resourcePath()}/${id}`, this.httpOptions)
+      .get<any>(`${this.resourcePath()}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 }

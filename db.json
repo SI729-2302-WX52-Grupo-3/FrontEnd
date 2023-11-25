@@ -148,6 +148,38 @@
       "gender": "Masculino",
       "password": "456895",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+      "email": "sergiodoctor@gmail.com",
+      "password": "passwordsada",
+      "name": "Sergio",
+      "lastName": "Bazan",
+      "speciality": "Genicolo",
+      "id": 13
+    },
+    {
+      "email": "sergiodoctor@gmail.com",
+      "password": "passwordsada",
+      "name": "Sergio",
+      "lastName": "Bazan",
+      "speciality": "Genicolo",
+      "id": 14
+    },
+    {
+      "email": "sergio@gfmail.com",
+      "password": "pasoasnmasASD",
+      "name": "Sergio",
+      "lastName": "Baz",
+      "speciality": "doctor@gmail.com",
+      "id": 15
+    },
+    {
+      "email": "sergio@gfmail.com",
+      "password": "pasoasnmasASD",
+      "name": "Sergio",
+      "lastName": "Baz",
+      "speciality": "doctor@gmail.com",
+      "id": 16
     }
   ],
   "doctors": [

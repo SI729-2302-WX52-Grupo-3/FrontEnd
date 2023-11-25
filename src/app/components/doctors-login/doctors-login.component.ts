@@ -1,26 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { Patient } from '../../interfaces/patient';
-import { MatSnackBar } from '@angular/material/snack-bar';
-//import {LogInService} from "../../services/log-in.service";
-import {
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
-import { map, Observable, shareReplay } from 'rxjs';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-//import {SourcesService} from "../../services/sources.service";
+import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { Component } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Observable, map, shareReplay } from 'rxjs';
+import { Patient } from 'src/app/interfaces/patient';
 import { AuthService } from 'src/app/shared/auth.service';
 
 @Component({
-  selector: 'app-log-in-card',
-  templateUrl: './log-in-card.component.html',
-  styleUrls: ['./log-in-card.component.css'],
-  providers: [MatSnackBar],
+  selector: 'app-doctors-login',
+  templateUrl: './doctors-login.component.html',
+  styleUrls: ['./doctors-login.component.css'],
 })
-export class LogInCardComponent implements OnInit {
+export class DoctorsLoginComponent {
   //CONNECTING TO FAKEAPI
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
@@ -49,7 +40,7 @@ export class LogInCardComponent implements OnInit {
     password: new FormControl(''),
     name: new FormControl(''),
     lastName: new FormControl(''),
-    age: new FormControl(''),
+    speciality: new FormControl(''),
   });
   constructor(
     private breakpointObserver: BreakpointObserver,
@@ -81,8 +72,8 @@ export class LogInCardComponent implements OnInit {
     return this.signUpForm.controls['lastName'];
   }
 
-  get age() {
-    return this.signUpForm.controls['age'];
+  get speciality() {
+    return this.signUpForm.controls['speciality'];
   }
   signUp() {
     this.authService
@@ -108,13 +99,5 @@ export class LogInCardComponent implements OnInit {
 
   forgot_password() {
     this.router.navigate(['/change-password']);
-  }
-
-  ngOnInit() {
-    /*this.newsSource.getSources('patients').subscribe((data: any): void => {
-      this.patients = data;
-      console.log("Sources: ", this.patients);
-    });
-    */
   }
 }

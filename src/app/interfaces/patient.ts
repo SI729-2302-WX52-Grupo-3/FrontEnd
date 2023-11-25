@@ -1,12 +1,7 @@
-export interface Patient{
-  dni: string;
+export interface Patient {
   name: string;
-  gender: string;
-  birthdate: string;
   email: string;
-  cellphone: string;
+  age: string;
   password: string;
   photo: string;
 }
-
-

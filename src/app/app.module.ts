@@ -43,6 +43,9 @@ import { MatListModule } from '@angular/material/list';
 import { MainDashboardComponent } from './views/patients/main-dashboard/main-dashboard.component';
 import { DoctorsListComponent } from './views/patients/doctors-list/doctors-list.component';
 import { RecordComponent } from './views/patients/record/record.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { DoctorsLoginComponent } from './components/doctors-login/doctors-login.component';
+import { LoginComponent } from './views/doctors/login/login.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +74,9 @@ import { RecordComponent } from './views/patients/record/record.component';
     MainDashboardComponent,
     DoctorsListComponent,
     RecordComponent,
+    PaymentComponent,
+    DoctorsLoginComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
